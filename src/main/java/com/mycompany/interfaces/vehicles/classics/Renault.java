@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.interfaces.vehicles.classics;
 
-/**
- *
- * @author SCIS2-07
- */
-public class Renault {
+import com.mycompany.interfaces.Convertible;
+import com.mycompany.interfaces.vehicles.Vehicle;
+
+
+public class Renault extends Vehicle implements Convertible{
+
+    public Renault(String brand, String color, int doorOtty) {
+        super(brand, color, doorOtty);
+    }
+
+    @Override
+    public void openCeiling() {
+        System.out.println("Soy cool");
+    }
     
 }

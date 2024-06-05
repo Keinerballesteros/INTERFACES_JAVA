@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.interfaces.vehicles;
 
-/**
- *
- * @author SCIS2-07
- */
+
 public class Vehicle {
+    private String brand;
+    private String color;
+    private int doorOtty;
+
+    public Vehicle(String brand, String color, int doorOtty) {
+        this.brand = brand;
+        this.color = color;
+        this.doorOtty = doorOtty;
+    }
     
+    
+    
+    public void run(){
+        System.out.println("Carro andando");
+    }
 }
